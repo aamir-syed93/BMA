@@ -1,0 +1,106 @@
+<style>a {
+	color: #000;
+	text-decoration: none;
+	font-style: normal;
+}
+a:hover, a:focus {
+	color: #E41C3C;
+	text-decoration: none;
+font-style: normal;
+}
+.pw{  text-align: center;
+  color: rgb(228, 28, 60);
+  font-weight: bold;}</style>
+<div style="margin: 215px 35% 77px;"
+	ng-controller="UserModule_LoginCtrl">
+
+
+	<div class="wrapper-md" style="
+    width: 100%;
+">
+		<div class="panel panel-default">
+
+			<div class="wrapper-md">
+				<div class="panel-heading"
+					style="color: #FFF; background-color: #E41C3C;  text-transform: uppercase;text-align: center;  font-size: 20px;  font-weight: 300;">
+					<b>{{'_Commom_Login_' | i18n}}</b>
+				</div>
+
+
+				<form ng-submit="loginUser(user)">
+					<div class="">
+						<table class="table-responsive table m-b-none">
+							<tr>
+								<td><label style="font-weight: normal;">{{'_Commom_Email_'
+										| i18n}} / {{'_Commom_UserName_' | i18n}}</label></td>
+
+								<td><input ng-model="user.useridentifier" name="identifier"
+									type="text" class="ng-pristine ng-invalid ng-invalid-required form-control" style="width: 100%;"
+									autofocus=""
+									Placeholder="{{'_Commom_Email_' | i18n}} / {{'_Commom_UserName_' | i18n}}"
+									required ></td>
+							</tr>
+							<tr>
+								<td>{{'_Commom_Password_' | i18n}}</td>
+								<td><input type="password" ng-model="user.password" class="form-control" style="width: 100%;"
+									Placeholder="{{'_Commom_Password_' | i18n}}" name="pass"
+									required  /></td>
+							</tr>
+							<tr ng-show="error" ><td colspan="2" > &nbsp;&nbsp;<span class="pw">{{error}}</span></td></tr>
+							<tr>
+								<td style="text-align: -webkit-center;"><input
+									type="submit" value="{{'_Commom_Login_' | i18n}}"
+									class="btn btn-default" style="background-color: #E41C3C;"></td>
+
+								<td style="text-align: -webkit-center;"><input
+									type="button" value="{{'_Commom_Cancel_' | i18n}}"
+									ng-click="cancelLogin()"
+									class="btn btn-default button-reupload"
+									style="background-color: #E41C3C;"></td>
+							</tr>
+
+							<tr>
+								<td style="text-align: -webkit-center;"><a
+									href="#/forgotpassword"><b>Forgot Password?</b></a></td>
+								<td style="text-align: -webkit-center;"><a
+									href="#/registration"><b>New User?</b></a></td>
+							</tr>
+
+							<!-- <tr>
+							<td align="right"><input type="checkbox" /></td>
+							<td>{{'_Commom_Remember_Me_' | i18n}}</td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center"><a href="#/forgotpassword">{{'_Commom_Forgot_Password_' | i18n}}
+								</a></td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center">{{'_Commom_New_' | i18n}} {{'_Commom_User_' | i18n}}? <a
+								href="#/registration">({{'_Commom_Click_here_to_Sign_Up_' | i18n}})</a></td>
+
+						</tr> -->
+							<tr>
+								<td colspan="2" align="center"><div
+										class="login-social-link centered ng-scope"
+										ng-controller="socialOneAllCtrl" style="">
+										<div
+											social-one-all="{'subdomain':'firstoneall','onLoginSuccess':'onLoginSuccess'}"
+											id="social_login_demo" class="socialiframe"
+											style="width: 265px !important; visibility: visible; border: 0px none; height: 50px !important; background-color: transparent;  margin: 0 0 0 13%;
+											">
+											<iframe id="oa_social_login_frame_74912" frameborder="0"
+												scrolling="no" allowtransparency="true"
+												data-processed="true" name="OneAll Social Login"
+												src="http://firstoneall.api.oneall.com/socialize/login/frame/?oakk=74912&amp;oakv=825590aa65b52391094e7a40bf6840c784ec8e5d844ab44c3b6fbbdd0d6c94adc218f96bd3970243cfa0878dc7cce2aa9c592920cb8b0dea8f27d58a1248179bbc91c232e5007552ad0b7a62a7f7a918a090f0fe5afea6b4c70b4dc745ec12edd07f7ab3b2fb6484a84409db22a0640cd74664b87a1bff6cf364893091df8916ce93a25d1e16ab4aa41b26f7a0ec9cc3635c054b3cf9141ffb4e5dec9c1799e3bbd217ce88dcb2d168db36a802232a9246a9da2cf428d5bad91b4750b4e1fbb54cd07377515cf652aef0512cdfa7f53d234d75c39c4f593fe7c8321df8bda0323ba64b10154072902973b5c51bf53eedfb446e5136828179e1561bdf98d4be903b88cc59401fe08b586d4a3552544b53c6d3d25a482b27c336cc1f92d2661916b4fff5b3d1bd8385c1951cfdb04058f1120fb87d575816aaf2f1391e02e46be9b633e8cfae0c335ef8275fc9b0a36b6ddb29b7cea564f476a381f86db9ede0f077f3798bec53f82edbed1049b04eeb29a7c797f70e40c006a6225470f14da6216722b310dc7d0ab7eb34b7557d08f633d17e1fde792168&amp;lang=en"
+												style="visibility: visible; border: 0px none; height: 78px !important; width: 265px; background-color: transparent;"></iframe>
+										</div>
+									</div></td>
+							</tr>
+						</table>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>

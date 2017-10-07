@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+	    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+	<beans:bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+  		<beans:property name="dataSource" ref="actualDataSource"/>
+	</beans:bean>
+
+	<beans:bean id="actualDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<beans:property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<beans:property name="url" value="jdbc:mysql://localhost:3306/remedy_db?createDatabaseIfNotExist=true" />
+		<beans:property name="username" value="root" />
+		<beans:property name="password" value="root" />
+		<!-- <beans:property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<beans:property name="url" value="${JDBC_CONNECTION_STRING_GRABMENU}" /> -->
+		<!--<beans:property name="maxConnectionsPerPartition" value="20" />
+		<beans:property name="minConnectionsPerPartition" value="20" />
+		<beans:property name="partitionCount" value="1" />
+		<beans:property name="acquireIncrement" value="5" />
+		<beans:property name="statementsCacheSize" value="0" />
+	--></beans:bean>
+
+</beans:beans>

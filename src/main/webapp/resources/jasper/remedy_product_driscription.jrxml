@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="remedy_product_driscription" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9b6ab1a6-9058-427a-8593-3dde3261e41e">
+	<property name="ireport.zoom" value="1.1"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="229"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="747388ec-96c4-400b-8e53-4243961e0670"/>
+	<subDataset name="Table Dataset 2" uuid="8c24ef61-0a5c-480b-81ae-63cf3f977a54"/>
+	<subDataset name="Table Dataset 3" uuid="146c4324-1f45-4758-a91c-779f8ca92f33"/>
+	<subDataset name="Table Dataset 4" uuid="5f882696-68b8-4f63-9826-2a2685f764d1"/>
+	<subDataset name="Table Dataset 5" uuid="3a4deb64-0288-4cbe-8a5b-7aedccbbc066"/>
+	<subDataset name="Table Dataset 6" uuid="24de7456-737b-47f3-85a3-321628320572"/>
+	<subDataset name="Table Dataset 7" uuid="fcf19a2a-7c53-47c1-ad76-3c7c472c5fcc"/>
+	<subDataset name="Table Dataset 8" uuid="f9ba7cdd-a557-4ad9-9a2b-fdf49f987f39"/>
+	<subDataset name="Table Dataset 9" uuid="249c2a19-b72d-4b29-b9cd-ae33eb7321f8"/>
+	<parameter name="HTML" class="java.lang.String"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<field name="complainUniqueId" class="java.lang.String"/>
+	<field name="title" class="java.lang.String"/>
+	<field name="companyName" class="java.lang.String"/>
+	<field name="complainDate" class="java.lang.String"/>
+	<field name="complainTime" class="java.lang.String"/>
+	<field name="complainTypeObj.name" class="java.lang.String"/>
+	<field name="description" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="8cd2bc1d-0510-4da2-892c-49fab56d3784" x="95" y="14" width="358" height="51"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Problem Description Statement]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="16cc31a2-a652-4d0f-a311-935351dd790e" x="0" y="9" width="100" height="20"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Complaint No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="56e104af-3502-48c6-9f6f-9ac52a77bf07" x="125" y="9" width="100" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Complaint  Title:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="26f8177f-814c-4962-8ee7-cb7626e90eda" x="258" y="9" width="117" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Complaint Against:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="857201c8-84ad-4b81-a907-4c00ac8ff862" x="403" y="9" width="152" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Complaint Date and Time]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="52ca3007-10a7-41cf-b222-67bb302906fa" x="0" y="43" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{complainUniqueId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6dae4f1e-74e3-4cca-ac93-29dbe4b9a22f" x="125" y="43" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6030f113-71b0-4ab7-ae3f-b32da8d8ad80" x="258" y="43" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{companyName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3c535248-3cd4-43b4-a203-bf526704a2c5" x="403" y="43" width="56" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{complainDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e5dc4548-aa46-43e4-a02c-9f553177fa50" x="470" y="43" width="63" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{complainTime}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="387" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="ed1574f3-c713-4f12-9d62-fc869a9f28a7" x="0" y="20" width="459" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Subject : Problem description Statement.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1e5606df-e5d7-44e7-88a6-0f0aea102650" x="0" y="55" width="458" height="61"/>
+				<textElement/>
+				<text><![CDATA[Thank you for choosing InstaRemedy and sharing your grievance with us. InstaRemedy is driven towards raising the voice of the consumers & getting their complaints resolved to make their life easier. We take every consumer complaint personally and ensure that we do everything that we can to get the consumer complaints resolved.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="467faec7-0c58-480f-a6cf-801996048f2b" x="0" y="131" width="437" height="20"/>
+				<textElement/>
+				<text><![CDATA[The below is our understanding of the complaint –
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a319c7a9-d345-4cdd-a6f2-ecbfc926334b" x="0" y="268" width="470" height="32"/>
+				<textElement/>
+				<text><![CDATA[To initiate the next steps, please confirm the above summary and choose from the available Insta products that would serve you the best by clicking here link]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3111090a-4ba0-4384-a69c-0bd42e60ae44" x="0" y="300" width="492" height="20"/>
+				<textElement/>
+				<text><![CDATA[For further information, call us on 180018001800 or Email us at Info@Instaremedy.com or you may use InstaChat through your mobile or web. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b7e9742c-8e59-4bee-9388-10484aeb1361" x="0" y="320" width="214" height="20"/>
+				<textElement/>
+				<text><![CDATA[Assuring you of our best services at all times]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9a7c831f-1839-4774-833f-7b13046f0d5b" x="0" y="340" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Insta Resolution team]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="eda1ab8b-df06-4692-a42f-50c928f72809" x="114" y="161" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[ Complaint Against:	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="69da63d4-5626-4400-b839-9bc36abead6d" x="114" y="181" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[ Industry :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7d05c732-a727-4088-a63e-8ce6bcc8db89" x="114" y="201" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[ Nature :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f67b0922-8479-4cb6-b954-8d40b9cc3dd1" x="114" y="221" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[ Description :]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="2663978d-4634-4e48-b5c0-e3492157e43b" x="214" y="181" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{complainTypeObj.name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="13b110b0-35bb-4887-b98c-cfd70e23f14e" x="214" y="221" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="96393691-6c19-4b9a-be14-f14ec6f18340" x="214" y="161" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{companyName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="da378770-51c0-4325-ad11-d3fbc0d13611" x="214" y="201" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,124 @@
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	display:none;
+	background: url('../img/loader.GIF') 50% 50% no-repeat rgba(255, 255,255, 0.5);
+}
+
+.ui-dialog{ top: 8% !important;}
+
+.ui-widget{font-size:13px;}
+.ui-widget table{font-size:11px;}
+#ui-datepicker-div { font-size:11px; }
+.ui-dialog div {margin:3px}
+
+
+/* body, html{
+    height: 100%;
+    font-family : Verdana, Arial, sans-serif !important;
+font-size: 12px;
+}
+
+
+
+td {
+padding:3px
+}
+
+.dataTableClass table,table.dataTableClass th,table.dataTableClass td {
+font-size: 12px;
+border: 1px solid black;
+padding : 3px;
+}
+
+
+table.dataTableClass th{
+background-color: #DDDDDD;
+}
+
+
+.dataTableClass tbody tr td button{
+	width: 21px;
+    height: 21px;
+    background-image: url(../img/edit.png);
+    background-repeat: no-repeat;
+}
+
+.filterIcon{
+	width: 35px;
+    height: 38px;
+    background-image: url(../img/Filter_List.png);
+    background-repeat: no-repeat;
+}
+
+
+
+
+.budget{
+background-color: #D0D874;
+}
+
+.editButtonHeader{}
+
+	
+  .overlay {  
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+  }
+
+  #tableDiv{
+  overflow-x: auto;
+  width: 103%
+  }
+  
+  .category1{
+  background-color:rgb(207, 219, 243);
+  }
+  .category2{
+  background-color:rgb(159, 182, 240);
+  }
+  .category3{
+  background-color:rgb(231, 236, 121);
+  }
+  .category4{
+  background-color:rgb(185, 238, 137);
+  }
+    .category5{
+  background-color:rgb(135, 200, 100);
+  }
+  .category0{
+	background-color:rgb(207, 219, 243);
+  }
+  
+  
+  .open2{
+	background-color:rgb(234, 58, 26);
+  }
+  
+  .quotation-icon{
+  width :20px;
+  height:20px;
+  cursor:pointer;
+  }
+  
+  
+  
+tr.groupJobs{
+border-top: brown solid;
+}   */
+.complaint_lbl {
+	float: left;
+	width: 40%;
+}
+.complaint_input {
+	float: right;
+	width: 70%;
+}
